@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resmin Kare Dışına Çıkması</title>
+  <style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: linear-gradient(to right top, #000000, #1a1211, #281e18, #332d1d, #363e28);   
+    }
+
+    .box {
+      width:1180px;
+      height: 220px;
+     
+      border-radius: 50%;
+      position: relative;
+      z-index: 1;
+   
+      box-shadow: rgba(149, 22, 3, 0.842) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    }
+  
+    .outside-image {
+      z-index: 1000;
+      position: absolute;
+      top: -280px; 
+      left:50%;
+      transform: translateX(-50%);
+      width: 900px;
+      height: 800px;
+      object-fit: cover;
+      
+    }
+ 
+
+    .paraf {
+      position: absolute;
+      bottom: -0%; 
+      left: 50%;
+    letter-spacing: 5px;
+      transform: translateX(-50%);
+      width: 80%; 
+      text-align: center;
+      color: rgb(148, 124, 124); 
+      font-size: 20px;
+      padding: 10px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+     margin: 20px;
+      flex-direction: column;
+      background-color: rgba(15, 2, 2, 0.358);
+      font-size: 20px;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    
+border-radius:20% 10% 3% 1%;
+    }
+    h2 {
+      animation-iteration-count: 3;
+      animation-name: example;
+      animation-duration: 4s;
+      padding: 20px;
+      text-align: center;
+      color: rgb(172, 65, 44);
+      font-size: 84px;
+      letter-spacing: 20px;
+      font-weight: 500;
+      font-family: "Sixtyfour", serif;    }
+
+    @media only screen and (max-width: 600px) {
+  h2{
+    padding: 30px;
+    font-size:30px;
+    
+  }
+  .box {
+      width:300px;
+      height: 200px;}
+    }
+    @media only screen and (max-width: 750px) {
+      .paraf{
+        z-index: 1000;
+      }
+  h2{
+    z-index: 1000;
+    margin: 10px;
+    font-size:35px;
+    text-align: center;
+  }
+  .outside-image {
+      z-index: 1000;
+      position: absolute;
+      top: -180px; 
+      left:50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      
+    }
+  .box {
+      width:600px;
+      height: 200px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>HEREOS</h2>
+    <div class="paraf">  
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nesciunt laboriosam maxime veritatis, reprehenderit, sequi eveniet animi ab laborum nostrum modi, hic dignissimos.
+      </p>
+    </div>
+    <div class="box">
+      <img src="hero.png" alt="Resim" class="outside-image">
+        </div>
+  </div>
+</body>
+</html>
